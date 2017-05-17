@@ -1,0 +1,56 @@
+<!doctype html>
+<html ng-app="Portfolio">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mark Goldstein</title>
+    <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular-resource.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.js"></script>
+    <script src="js/app.js"></script>
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/konpa/devicon/89f2f44ba07ea3fff7e561c2142813b278c2d6c6/devicon.min.csshttps://cdn.rawgit.com/konpa/devicon/89f2f44ba07ea3fff7e561c2142813b278c2d6c6/devicon.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="text-center">
+        <div class="header container">
+            <div class="row flexrow main-title align-items-end">
+                <div class="col-xs-12">
+                    <h1 class="white">Mark Goldstein</h1>
+                    <h2 class="white">Full-Stack Web Developer</h2>
+                </div>
+            </div>
+        </div>
+        <div class="nav-div">
+            <span class="col-sm-3">
+                    <a class="white" ui-sref="about">About</a>
+                </span>
+            <span class="col-sm-3">
+                    <a class="white" href="/#/work">Work</a>
+                </span>
+            <span class="col-sm-3">
+                     <a class="white" href="/#/contact">Contact</a>
+                </span>
+            <span class="col-sm-3">
+                    <a class="white btn-descrip" href="#" target="_blank">Resume</a>
+                </span>
+        </div>
+    </header>
+    <main ui-view></main>
+    <footer class="white">
+        <div class="container">
+            <span> &copy Mark Goldstein</span>
+            <span class="pull-right"> <i class="fa fa-linkedin-square"></i></span>
+        </div>
+    </footer>
+</body>
+
+</html>
