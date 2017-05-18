@@ -12,6 +12,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular-resource.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.js"></script>
     <script src="js/app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="js/index.js"></script>
     <!-- Latest compiled and minified CSS & JS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -22,26 +24,24 @@
 <body>
     <header class="text-center">
         <div class="header container">
-            <div class="row flexrow main-title align-items-end">
-                <div class="col-xs-12">
-                    <h1 class="white">Mark Goldstein</h1>
-                    <h2 class="white">Full-Stack Web Developer</h2>
-                </div>
+            <div class="title-bar">
+                <h1 class="white letter-spaced">Mark Goldstein</h1>
+                <h2 class="white">Full-Stack Web Developer</h2>
             </div>
         </div>
-        <div class="nav-div">
+        <div id="nav" class="nav-div">
             <span class="col-sm-3">
-                    <a class="white" ui-sref="about">About</a>
-                </span>
+                        <a class="white" ui-sref="about">About</a>
+                    </span>
             <span class="col-sm-3">
-                    <a class="white" href="/#/work">Work</a>
-                </span>
+                        <a class="white" ui-sref="work">Work</a>
+                    </span>
             <span class="col-sm-3">
-                     <a class="white" href="/#/contact">Contact</a>
-                </span>
+                         <a class="white" ui-sref="contact">Contact</a>
+                    </span>
             <span class="col-sm-3">
-                    <a class="white btn-descrip" href="#" target="_blank">Resume</a>
-                </span>
+                        <a class="white btn-descrip" href="#" target="_blank">Resume</a>
+                    </span>
         </div>
     </header>
     <main ui-view></main>

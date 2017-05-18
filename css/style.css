@@ -21,10 +21,6 @@ body,
     color: #fefff6;
 }
 
-h1 {
-    margin-top: 0 !important;
-}
-
 p {
     font-family: 'Open Sans', sans-serif;
     font-weight: lighter;
@@ -78,6 +74,13 @@ header a {
     font-size: 1.4em
 }
 
+.title-bar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .main-title {
     height: 62%;
 }
@@ -90,6 +93,16 @@ header a {
     /*z-index: 100000;
     background: #2c4e4b;*/
     margin-top: -55px;
+}
+
+.fix-nav {
+    position: fixed !important;
+    top: 55px;
+    z-index: 1000000;
+    background: black;
+    background-image: url('../img/as8nzKo.jpg');
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url('../img/as8nzKo.jpg');
+    background-position: left top;
 }
 
 .main-title h1 {
@@ -115,7 +128,7 @@ footer {
 /*contact*/
 
 .contact-wrapper {
-    height: 770px;
+    height: 686px;
     margin-left: 12% !important;
     padding-left: 0 !important;
 }
@@ -159,55 +172,85 @@ footer {
 /*about*/
 
 .about {
-    height: 770px;
-    width: 100%;
-    padding: 0
-    /*background-image: url('../img/iceland.png');
-background-size: 100% 600px;
-*/
+    padding: 0 !important;
 }
 
 .about-div {
-    padding: 0;
-    position: absolute;
-    width: 60%;
-    left: 0;
-    z-index: 1000;
-    margin-top: 21px;
-    margin-left: 12%;
+    height: 544px;
 }
 
-.about-div div.header {
-    height: 280px;
-    margin: auto 0;
+.skills.container {
+    /*float: left;*/
+    margin-left: 15%;
+}
+
+.skills.container p {
+    font-size: 11pt;
+}
+
+.skills.row {
+    background: lightgrey;
+    padding-bottom: 50px;
+}
+
+.skill-group {
+    margin-bottom: 40px;
+    padding-left: 0;
 }
 
 .headshot {
-    float: left;
-}
-
-.about-text {
-    width: 58%;
-}
-
-.about-text h2 {
-    margin-bottom: 30px;
-}
-
-.devicons {
-    /*float: left;*/
-    width: 100%
-}
-
-.about-div img {
-    /*height: 280px;*/
-    width: 50%;
+    height: 170px;
     border-radius: 50%;
 }
 
-div.about-image img {
+.about-image {
     position: absolute;
     right: 0;
-    height: 770px;
-    width: 755px;
+}
+
+.iceland-image {
+    height: 544px;
+    width: 339px;
+}
+
+.about-text {
+    margin-left: 15%;
+    z-index: 10000
+}
+
+
+/*work*/
+
+
+/*.height-wrapper {
+    height: 686px;
+    overflow-y: auto
+}
+*/
+
+@media (max-width: 680px) {
+    /*about*/
+    .about-text {
+        margin-left: 0;
+        color: #fefff6;
+        background: rgba(1, 1, 1, .7);
+        height: 544px;
+    }
+    .nav-div a {
+        font-size: 1.2em;
+    }
+    .nav-div span {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+    .skills.container {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 360px) {
+    .nav-div span {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }

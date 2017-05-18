@@ -5,8 +5,12 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
 
     //define routes
     $stateProvider
-        .state('about', {
+        .state('/', {
             url: '/',
+            templateUrl: 'views/landing.html'
+        })
+        .state('about', {
+            url: '/about',
             templateUrl: 'views/about.html'
         })
         .state('work', {
