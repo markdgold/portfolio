@@ -25,5 +25,5 @@ app.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', functio
             url: '/error',
             templateUrl: 'views/error.html'
         });
-    //$locationProvider.html5Mode(true);
+    $locationProvider.html5Mode(true);
 }]);
