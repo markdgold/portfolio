@@ -1,6 +1,7 @@
 var app = angular.module('Portfolio', ['ui.router']);
 
-app.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', function($stateProvider, $urlRouterProvider, $locationProvider) {
+app.config(['$stateProvider', '$urlRouterProvider', /*'$locationProvider',*/ function($stateProvider, $urlRouterProvider/*, $locationProvider
+*/) {
     $urlRouterProvider.otherwise('/error');
 
     //define routes
@@ -25,5 +26,5 @@ app.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', functio
             url: '/error',
             templateUrl: 'views/error.html'
         });
-    $locationProvider.html5Mode(true);
+    //$locationProvider.html5Mode(true);
 }]);
