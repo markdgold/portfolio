@@ -21,7 +21,8 @@ body,
     color: #fefff6;
 }
 
-p {
+p,
+.page-font {
     font-family: 'Open Sans', sans-serif;
     font-weight: lighter;
     font-size: 14pt;
@@ -102,7 +103,7 @@ header a {
     background: black;
     background-image: url('../img/as8nzKo.jpg');
     background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url('../img/as8nzKo.jpg');
-    background-position: left top;
+    background-position: left bottom;
 }
 
 .main-title h1 {
@@ -120,29 +121,47 @@ header a {
 /*Footer*/
 
 footer {
-    background: #2c4e4b;
+    background: #130c19;
     height: 50px;
+    width:
 }
+
+footer span {
+    padding-top: 13px;
+    padding-left: 20px;
+}
+
+
+/*footer span a {
+    padding-right: 2%;
+    padding-left: 2%;
+}
+*/
 
 
 /*contact*/
 
 .contact-wrapper {
     height: 686px;
-    margin-left: 12% !important;
-    padding-left: 0 !important;
+    margin-left: 15% !important;
+    padding-left: 15px !important;
 }
 
 .contact-wrapper h2 {
-    margin-top: 41px;
+    margin-top: 20px;
 }
 
 .contact {
     height: 300px;
 }
 
+.contact i {
+    font-size: 1.4em;
+}
+
 .contact a {
     color: #333;
+    font-size: 1.4em;
 }
 
 .contact a:hover {
@@ -151,10 +170,15 @@ footer {
 
 .contact-info {
     margin-top: 50px;
+    padding-left: 0;
 }
 
 .contact-info span {
     font-family: 'Open Sans', sans-serif;
+}
+
+.contact-form-div {
+    padding: 0px !important;
 }
 
 .btn {
@@ -245,6 +269,15 @@ footer {
     }
     .skills.container {
         margin-left: 0;
+    }
+    /*contact*/
+    .contact-wrapper {
+        margin-left: 0 !important;
+    }
+    .contact-info {
+        margin-top: 6px;
+        padding-left: 15px;
+        margin-bottom: 20px;
     }
 }
 

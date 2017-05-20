@@ -1,13 +1,13 @@
 var app = angular.module('Portfolio', ['ui.router']);
 
-app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
+app.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', function($stateProvider, $urlRouterProvider, $locationProvider) {
     $urlRouterProvider.otherwise('/error');
 
     //define routes
     $stateProvider
         .state('/', {
             url: '/',
-            templateUrl: 'views/landing.html'
+            templateUrl: 'views/about.html'
         })
         .state('about', {
             url: '/about',
@@ -25,5 +25,5 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
             url: '/error',
             templateUrl: 'views/error.html'
         });
-
+    //$locationProvider.html5Mode(true);
 }]);
