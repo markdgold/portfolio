@@ -2,7 +2,7 @@ var app = angular.module('Portfolio', ['ui.router']);
 
 app.config(['$stateProvider', '$urlRouterProvider', /*'$locationProvider',*/ function($stateProvider, $urlRouterProvider/*, $locationProvider
 */) {
-    $urlRouterProvider.otherwise('/error');
+    $urlRouterProvider.otherwise('/');
 
     //define routes
     $stateProvider
