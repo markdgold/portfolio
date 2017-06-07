@@ -191,7 +191,9 @@ footer span {
     border-radius: 0;
     border: 1px solid black;
 }
-
+.form-group{
+    font-family: 'Open Sans', sans-serif;
+}
 
 /*about*/
 
